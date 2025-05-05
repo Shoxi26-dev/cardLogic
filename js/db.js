@@ -1,4 +1,4 @@
-export let arr = [
+let arr = [
     {
         id: 1,
         title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -269,4 +269,4 @@ export let arr = [
     },
 ];
 
-export let num = 10
+export {arr}

@@ -4,7 +4,12 @@
 	box-sizing: border-box;
 	font-family: Inter;
 }
-
+.active{
+	display: block;
+}
+.hide{
+	display: none;
+}
 img {
 	max-width: 100%;
 }
@@ -321,8 +326,8 @@ img {
 	height: 100%;
 	background-color: black;
 	transition: 0.3s ease;
-	visibility: hidden;
-	opacity: 0;
+	display: none;
+	
 }
 
 #closeModalBtn {
@@ -350,7 +355,7 @@ h2 {
 	cursor: pointer;
 }
 
-.modal__box {
+.modal_box {
 	height: 700px; /* Фиксированная высота контейнера */
 	overflow-y: auto;
 	display: flex;
@@ -366,6 +371,7 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 20px;
 }
 
 .elem img {
@@ -374,13 +380,19 @@ h2 {
 	object-fit: contain;
 }
 
-.elem__box {
+.elem_box {
 	display: flex;
 	align-items: center;
 	gap: 12px;
+	
 }
 
-.elem__box button {
+.price{
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+.elem_box button {
 	width: 36px;
 	height: 36px;
 	font-size: 24px;
@@ -390,12 +402,16 @@ h2 {
 	color: white;
 	cursor: pointer;
 }
-.elem__box span {
+.count  {
 	font-size: 20px;
 	font-weight: 700;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.name{
+	font-size: 20px;
+	font-weight: 700;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .modal-container {
 	position: fixed;
 	transition: all 1s ease;
